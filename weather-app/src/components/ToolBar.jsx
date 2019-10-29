@@ -6,16 +6,15 @@ const ToolBar = (props) => {
             <div style={{flex:1}}>
                 <input className="search-input"/>
                 <button className="search-btn">
-                    <i className="fa fa-search">
-                        ::before
-                    </i>
+                    <i className="fa fa-search"></i>
                 </button>
                 <button className="temp-switch">
-                    <i className="fa fa-thermometer-empty">
-                        ::before
-                    </i>
-                    <sup>°</sup>
-                    "C"
+                    <i 
+                        className="fa fa-thermometer-empty"
+                        aria-hidden="true"
+                        style={{'padding-right':'5px'}}
+                    ></i>
+                    <sup>&deg;</sup>
                 </button>
             </div>
         </nav>
